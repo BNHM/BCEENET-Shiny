@@ -390,15 +390,21 @@ ui <- dashboardPage(
          # Horizontal line ----
       tags$hr(),
       
-      textInput("graph_title", label = h3("Type Graph Title Here"), value = "Enter text..."),
+      textInput("graph_title", label = h3("Landscape Genetics Analysis"), value = "Enter text..."),
 
       # Horizontal line ----  
       # About info
-      menuItem("Links", tabName = "Links", 
+      menuItem("Links", tabName = "Links", startExpanded = TRUE,
+               menuSubItem("Activity3-Genetic_Analysis_v1.docx", icon = icon("file-code-o"), 
+                           href = "https://github.com/BNHM/BCEENET-Shiny/raw/aa6ba608ba17deeafe70765493c26b2a95eb049d/Activity3-Genetic_Analysis_v1.docx", 
+                           newtab = T),
+               menuSubItem("Activity4-Interpret_the_PCA_v1.docx", icon = icon("file-code-o"), 
+                           href = "https://github.com/BNHM/BCEENET-Shiny/raw/aa6ba608ba17deeafe70765493c26b2a95eb049d/Activity4-Interpret_the_PCA_v1.docx", 
+                           newtab = T),
                menuSubItem("BCEENET info", icon = icon("home"), 
                            href = "https://bceenetwork.org", 
                            newtab = T),
-               menuSubItem("Source code (Github)", icon = icon("file-code-o"), 
+               menuSubItem("Source code (Github)", icon = icon("code"), 
                            href = "#", 
                            newtab = T))
     ),
