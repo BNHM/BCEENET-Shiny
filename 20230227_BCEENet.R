@@ -374,7 +374,7 @@ plot.PCA.Results <- function(data.frame.graph.pca, title.input, PC.lables.input)
 ui <- dashboardPage(
 
   # App title ----
-  dashboardHeader(title = "BCEEnet"),
+  dashboardHeader(title = "BCEEnet CURE"),
 
   # Sidebar layout with input and output definitions ----
   dashboardSidebar(
@@ -400,6 +400,9 @@ ui <- dashboardPage(
                            newtab = T),
                menuSubItem("Activity4-Interpret_the_PCA_v1.docx", icon = icon("file-code-o"), 
                            href = "https://github.com/BNHM/BCEENET-Shiny/raw/aa6ba608ba17deeafe70765493c26b2a95eb049d/Activity4-Interpret_the_PCA_v1.docx", 
+                           newtab = T),
+               menuSubItem("Download Ecoregion Shapefile (zip)", icon = icon("file-code-o"), 
+                           href = "https://github.com/BNHM/BCEENET-Shiny/blob/bfe9457028f0d5cb1a0ad56d26c3713e5e3fb922/shp/BCEENET_Ecoregions_shp.zip", 
                            newtab = T),
                menuSubItem("BCEENET info", icon = icon("home"), 
                            href = "https://bceenetwork.org", 
